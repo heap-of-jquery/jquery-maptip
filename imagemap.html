@@ -1,0 +1,41 @@
+<html>
+	<head>
+	        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+		<style type='text/css'>
+			.tooltip { background-color:gray; opacity:0.2; }
+			.tooltip_display { 
+		                z-index:100;
+                 		background-color:#fcfcfc;
+		                border: #cfcfcf solid 1px;
+
+				position:relative;
+				top:10px; left:0;
+			}
+			.tooltips { 
+			}
+		</style>
+		<script type='text/javascript' src='gb.maptip.jquery.js'></script>
+		<script type='text/javascript'>
+                        jQuery(document).ready(function() {
+				imagemap_tooltips = [{
+					left:'125px', 
+					top:'135px', 
+					width:'494px', 
+					height:'175px', 
+					text: "A test tooltip."
+				}];
+
+	
+				map = imagemap();
+				map.apply("#image", imagemap_tooltips);
+			});
+		</script>
+	</head>
+
+	<body>
+		<div id='image'>
+			<img src="#" style="width:800px; height:400px;" />
+		</div>
+	</body>
+</html>
+
