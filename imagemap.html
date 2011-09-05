@@ -14,6 +14,11 @@
 			.tooltips { 
 			}
 		</style>
+		
+		<!-- 
+			this is just an example of how to use MapTip out of the box to add a quick hotspot to an image
+			you can add more than one of course, by passing the imagemap_tooltips array with more than one object.
+		-->
 		<script type='text/javascript' src='gb.maptip.jquery.js'></script>
 		<script type='text/javascript'>
                         jQuery(document).ready(function() {
@@ -26,7 +31,7 @@
 				}];
 
 	
-				map = imagemap();
+				map = MapTip();
 				map.apply("#image", imagemap_tooltips);
 			});
 		</script>
